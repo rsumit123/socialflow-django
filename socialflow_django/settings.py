@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'api',
+    'course_content',
     'drf_yasg',
 ]
 

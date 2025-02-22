@@ -1,4 +1,4 @@
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 from .auth_views import (
     SupabaseLoginView, SupabaseRegisterView, SupabaseGuestLoginView
 )
@@ -11,27 +11,20 @@ urlpatterns = [
     # Authentication Endpoints
     path('auth/guest_login/', SupabaseGuestLoginView.as_view(), name="guest_login"),
     path('auth/login/', SupabaseLoginView.as_view(), name="login"),
-    
-
     path('auth/register/', SupabaseRegisterView.as_view(), name="register"),
-    # path('auth/confirm-email/', SupabaseConfirmEmailView.as_view(), name="supabase-confirm-email"),
-    
     # Protected Routes
     path('protected/', ProtectedView.as_view(), name="protected"),
     path('health/', HealthCheck.as_view(), name="health_check"),
-
     # Chat Endpoints
     path('chat/sessions/', ChatSessionView.as_view(), name="chat_sessions"),
     path('chat/sessions/<uuid:session_id>/messages/', ChatMessageView.as_view(), name="chat_messages"),
-
-    # Detail view for a specific chat session
+    # Report Endpoints
     path('report/chat/sessions/<uuid:session_id>/report-card/', ReportCardDetailView.as_view(), name='reportcard-detail'),
-    # List view for all report cards
     path('report/report-cards/', ReportCardListView.as_view(), name='reportcard-list'),
-
-
     # Swagger & ReDoc Documentation
     re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name="schema-swagger-ui"),
     re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name="schema-redoc"),
     path('swagger.json/', schema_view.without_ui(cache_timeout=0), name="schema-json"),
+    # Include new content endpoints
+    path('course_content/', include('course_content.urls')),
 ]

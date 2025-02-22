@@ -4,10 +4,13 @@ import logging
 from openai import OpenAI
 from dotenv import load_dotenv
 from .models import ReportCard
+from course_content.models import UserContentAccess, Category, SubCategory, Lesson
 # app.py
 import re
 import json
 import time
+from django.contrib.contenttypes.models import ContentType
+
 load_dotenv()
 
 logger = logging.getLogger(__name__)
@@ -37,6 +40,7 @@ def get_ai_response(messages, temperature=1.3):
     try:
         start=time.perf_counter()
         logger.error(f"CALLING AI ;;;;")
+        logger.error(f"Received messages as => {messages=}")
         
 
         # Make API request
@@ -49,6 +53,7 @@ def get_ai_response(messages, temperature=1.3):
 
         # Extract AI response
         ai_message = response.choices[0].message.content
+        logger.error(f"AI RESPONSE => {ai_message}")
         end=time.perf_counter()
         logger.error(f"AI RESPONSE TOOK {end-start} seconds")
         return ai_message
@@ -169,22 +174,28 @@ def parse_evaluation_result(evaluation_text):
 
 
 
+
 def process_evaluation(session, user_messages, ai_messages, session_id, user):
     """
     Build evaluation prompts, run evaluation logic, create and return a ReportCard.
+    Then, unlock the corresponding category, subcategory, and lesson based on the
+    lowest score (engagement, empathy, or humor).
     """
+    # Build the prompt and evaluate
     prompt_to_send = [
         {"ai_message": ai, "user_message": user_msg} 
         for ai, user_msg in zip(ai_messages, user_messages)
     ]
     evaluation_result = evaluate_user_skills(prompt_to_send)
     evaluation_data = parse_evaluation_result(evaluation_result)
+    
     feedback = evaluation_data.get("feedback", "Empty")
     engagement_score = int(evaluation_data.get("engagement_score", 0))
     empathy_score = int(evaluation_data.get("empathy_score", 0))
     humor_score = int(evaluation_data.get("humor_score", 0))
     total_score = (engagement_score + empathy_score + humor_score) // 3
 
+    # Create the report card.
     report_card = ReportCard.objects.create(
         session=session,
         user=user,
@@ -194,4 +205,74 @@ def process_evaluation(session, user_messages, ai_messages, session_id, user):
         total_score=total_score,
         feedback=feedback
     )
-    return report_card, feedback
+    
+    # Determine which score is the lowest.
+    score_data = {
+        "engagement": engagement_score,
+        "empathy": empathy_score,
+        "humor": humor_score
+    }
+    lowest_attribute = min(score_data, key=score_data.get)
+    
+    # Map the attribute to the corresponding Category name.
+    attribute_to_category = {
+        "engagement": "Engagement",
+        "empathy": "Empathy",
+        "humor": "Humor"
+    }
+    
+    unlocked_category = None
+    unlocked_subcategory = None
+    unlocked_lesson = None
+    
+    # Unlock the target category
+    try:
+        category = Category.objects.get(name=attribute_to_category[lowest_attribute])
+    except Category.DoesNotExist:
+        category = None
+
+    if category:
+        ct_category = ContentType.objects.get_for_model(category)
+        user_access, created = UserContentAccess.objects.get_or_create(
+            user=user,
+            content_type=ct_category,
+            object_id=category.pk,
+            defaults={'allowed': True}
+        )
+        if not created and not user_access.allowed:
+            user_access.allowed = True
+            user_access.save()
+        unlocked_category = category
+
+        # Unlock the first subcategory for this category, ordered by "order".
+        subcategory = SubCategory.objects.filter(category=category).order_by("order").first()
+        if subcategory:
+            ct_subcategory = ContentType.objects.get_for_model(subcategory)
+            user_access_sub, created = UserContentAccess.objects.get_or_create(
+                user=user,
+                content_type=ct_subcategory,
+                object_id=subcategory.pk,
+                defaults={'allowed': True}
+            )
+            if not created and not user_access_sub.allowed:
+                user_access_sub.allowed = True
+                user_access_sub.save()
+            unlocked_subcategory = subcategory
+
+            # Unlock the first lesson for this subcategory (assumes Lesson has a foreign key to SubCategory)
+            lesson = Lesson.objects.filter(subcategory=subcategory).order_by("order").first()
+            if lesson:
+                ct_lesson = ContentType.objects.get_for_model(lesson)
+                user_access_lesson, created = UserContentAccess.objects.get_or_create(
+                    user=user,
+                    content_type=ct_lesson,
+                    object_id=lesson.pk,
+                    defaults={'allowed': True}
+                )
+                if not created and not user_access_lesson.allowed:
+                    user_access_lesson.allowed = True
+                    user_access_lesson.save()
+                unlocked_lesson = lesson
+
+    return report_card, feedback, unlocked_category, unlocked_subcategory, unlocked_lesson
+

@@ -281,7 +281,7 @@ class ChatMessageView(APIView):
                 ai_messages = list(
                     session.messages.filter(sender="assistant").values_list("content", flat=True)
                 )
-                report_card, feedback = process_evaluation(
+                report_card, feedback, unlocked_cat, unlocked_sub, unlocked_lesson = process_evaluation(
                     session, updated_user_messages, ai_messages, session_id, request.user
                 )
                 if user_message_count == 10:
@@ -290,14 +290,15 @@ class ChatMessageView(APIView):
                         "ai_response": ai_msg.content,
                         "evaluation": {
                             "engagement_score": report_card.engagement_score,
-                            "engagement_feedback": report_card.engagement_feedback,
+                            # "engagement_feedback": report_card.engagement_feedback,
                             "humor_score": report_card.humor_score,
-                            "humor_feedback": report_card.humor_feedback,
+                            # "humor_feedback": report_card.humor_feedback,
                             "empathy_score": report_card.empathy_score,
-                            "empathy_feedback": report_card.empathy_feedback,
+                            # "empathy_feedback": report_card.empathy_feedback,
                             "total_score": report_card.total_score,
                             "feedback_summary": feedback,
                             "feedback": feedback,
+                            "unlocked_content": True if unlocked_cat or unlocked_sub or unlocked_lesson else False,
                             "report_link": f"{CLIENT_URL}/report-cards/{session_id}"
                         }
                     }
@@ -311,6 +312,7 @@ class ChatMessageView(APIView):
                             "empathy_score": report_card.empathy_score,
                             "total_score": report_card.total_score,
                             "feedback_summary": feedback,
+                            "unlocked_content": True if unlocked_cat or unlocked_sub or unlocked_lesson else False,
                             "feedback": feedback,
                             "report_link": f"{CLIENT_URL}/report-cards/{session_id}"
                         }
