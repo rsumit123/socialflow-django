@@ -44,6 +44,7 @@ class ReportCardDetailView(APIView):
                         # "empathy_feedback": openapi.Schema(type=openapi.TYPE_STRING),
                         "feedback": openapi.Schema(type=openapi.TYPE_STRING),
                         "total_score": openapi.Schema(type=openapi.TYPE_INTEGER),
+                        "first_report": openapi.Schema(type=openapi.TYPE_BOOLEAN),
                         "created_at": openapi.Schema(type=openapi.TYPE_STRING, format="date-time")
                     }
                 )
@@ -63,6 +64,7 @@ class ReportCardDetailView(APIView):
 
         try:
             rc = ReportCard.objects.get(session=session)
+            first_report = ReportCard.objects.filter(user=user).count() == 1
         except ReportCard.DoesNotExist:
             return Response({"error": "Report card not found for this session."}, status=status.HTTP_404_NOT_FOUND)
 
@@ -75,6 +77,7 @@ class ReportCardDetailView(APIView):
             "empathy_score": rc.empathy_score,
             # "empathy_feedback": rc.empathy_feedback,
             "feedback": rc.feedback,
+            "first_report": first_report,
             "total_score": rc.total_score,
             "created_at": rc.created_at.isoformat(),
         }
