@@ -213,13 +213,80 @@ class TrainingPlanStatusView(APIView):
         )}
     )
     def get(self, request, format=None):
-        # Retrieve all categories
+        new_user = False
+
+        # Unlock Category with id=4 if not already unlocked.
+        try:
+            category = Category.objects.get(pk=4)
+            category_ctype = ContentType.objects.get_for_model(Category)
+            access, created = UserContentAccess.objects.get_or_create(
+                user=request.user,
+                content_type=category_ctype,
+                object_id=category.pk,
+                defaults={'allowed': True}
+            )
+            if created:
+                new_user = True
+                logger.info("Category unlocked for the first time.")
+            elif not access.allowed:
+                access.allowed = True
+                access.save()
+                new_user = True
+                logger.info("Category was locked and is now unlocked.")
+        except Category.DoesNotExist:
+            logger.error("Category with id 4 not found.")
+
+        # Unlock Subcategory with id=12 if not already unlocked.
+        try:
+            subcategory = SubCategory.objects.get(pk=12)
+            subcategory_ctype = ContentType.objects.get_for_model(SubCategory)
+            access, created = UserContentAccess.objects.get_or_create(
+                user=request.user,
+                content_type=subcategory_ctype,
+                object_id=subcategory.pk,
+                defaults={'allowed': True}
+            )
+            if created:
+                new_user = True
+                logger.info("Subcategory unlocked for the first time.")
+            elif not access.allowed:
+                access.allowed = True
+                access.save()
+                new_user = True
+                logger.info("Subcategory was locked and is now unlocked.")
+        except SubCategory.DoesNotExist:
+            logger.error("Subcategory with id 12 not found.")
+
+        # Unlock Lesson with id=19 if not already unlocked.
+        try:
+            lesson = Lesson.objects.get(pk=19)
+            lesson_ctype = ContentType.objects.get_for_model(Lesson)
+            access, created = UserContentAccess.objects.get_or_create(
+                user=request.user,
+                content_type=lesson_ctype,
+                object_id=lesson.pk,
+                defaults={'allowed': True}
+            )
+            if created:
+                new_user = True
+                logger.info("Lesson unlocked for the first time.")
+            elif not access.allowed:
+                access.allowed = True
+                access.save()
+                new_user = True
+                logger.info("Lesson was locked and is now unlocked.")
+        except Lesson.DoesNotExist:
+            logger.error("Lesson with id 19 not found.")
+
+        # Retrieve all categories and determine if at least one category is unlocked.
         categories = Category.objects.all()
-        # Determine if at least one category is unlocked for this user
         any_unlocked = any(is_content_accessible(request.user, category) for category in categories)
-        # The training plan is locked if none of the categories are unlocked
         is_locked = not any_unlocked
-        return Response({"is_locked": is_locked})
+
+        return Response(
+            {"is_locked": is_locked, "new_user": new_user},
+            status=status.HTTP_200_OK
+        )
 
 
 
@@ -314,9 +381,11 @@ class EvaluateLessonView(APIView):
                         "evaluate the following response by the user. Provide a score out of 100 and brief feedback "
                         "that is helpful to the users. Your tone should be positive in general. Like you did this good,"
                         "but you can improve this. The feedback should be concise and to the point. "
+                        "Remember users' response should always take into account the context, if not provide that in your feedback and decrease score."
                         "The feedback should be constructive and actionable. "
                         "The feedback should be specific and clear. "
                         "The feedback should be encouraging and motivating. "
+                        "Never give examples as to how users' should response in your feedback. "
                         f"Remember the score is out of 100 and the passing score is {lesson.threshold_score}, give a score"
                         "above this only when you feel the user was almost perfect. Also your feedback should be"
                         "no more than 20 words. Format your answer as: 'score: <score>, feedback: <feedback>'."
@@ -369,6 +438,7 @@ class EvaluateLessonView(APIView):
                     .filter(subcategory=lesson.subcategory, order=lesson.order + 1)
                     .first()
                 )
+                next_lesson_id = 0
                 if next_lesson:
                     next_lesson_id = next_lesson.id
                     ctype = ContentType.objects.get_for_model(next_lesson)
@@ -387,7 +457,7 @@ class EvaluateLessonView(APIView):
                 "score": score,
                 "feedback": feedback,
                 "completed": completed,
-                "next_lesson_url": f"{CLIENT_URL}/lessondetail/{next_lesson_id}" if completed else None
+                "next_lesson_url": f"{CLIENT_URL}/training/lessondetail/{next_lesson_id}" if completed else None
             }, status=status.HTTP_200_OK)
 
         except Exception as e:
@@ -397,3 +467,6 @@ class EvaluateLessonView(APIView):
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
+
+
+    

@@ -88,3 +88,6 @@ class LessonProgressSerializer(serializers.ModelSerializer):
             'attempted_at'
         ]
         read_only_fields = ['user', 'attempted_at', 'lesson']
+
+
+

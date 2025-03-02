@@ -1,6 +1,6 @@
 from .utils import get_ai_response, process_evaluation
-from .models import User, ChatSession, ChatMessage, ReportCard
-from .serializers import UserSerializer, ChatSessionSerializer, ChatMessageSerializer, ReportCardSerializer
+from .models import User, ChatSession, ChatMessage, ReportCard, ChatBot
+from .serializers import UserSerializer, ChatSessionSerializer, ChatMessageSerializer, ReportCardSerializer, ChatBotListSerializer
 from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from drf_yasg.utils import swagger_auto_schema
@@ -43,6 +43,20 @@ CLIENT_URL = os.getenv("CLIENT_URL", "https://socialflow.skdev.one")
 MAX_MESSAGES = 20
 
 
+
+class ChatBotListView(APIView):
+    # Adjust permission_classes as needed (e.g., IsAuthenticated)
+    permission_classes = []
+
+    @swagger_auto_schema(
+        operation_summary="List Chat Bots",
+        operation_description="Returns a list of available chat bots (without the prompt field).",
+        responses={200: ChatBotListSerializer(many=True)}
+    )
+    def get(self, request, format=None):
+        bots = ChatBot.objects.all()
+        serializer = ChatBotListSerializer(bots, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 class ChatSessionView(APIView):
     """
     API to create a new chat session.
@@ -51,7 +65,7 @@ class ChatSessionView(APIView):
 
     @swagger_auto_schema(
         operation_summary="Create a new chat session",
-        operation_description="Starts a new chat session and returns an initial AI-generated message.",
+        operation_description="Starts a new chat session and returns an initial AI-generated message. Accepts an optional bot_id parameter.",
         manual_parameters=[
             openapi.Parameter(
                 "Authorization",
@@ -59,6 +73,13 @@ class ChatSessionView(APIView):
                 description="Bearer JWT token",
                 type=openapi.TYPE_STRING,
                 required=True,
+            ),
+            openapi.Parameter(
+                "bot_id",
+                openapi.IN_QUERY,
+                description="ID of the selected ChatBot (optional). Defaults to the first available bot if not provided.",
+                type=openapi.TYPE_INTEGER,
+                required=False
             )
         ],
         responses={
@@ -79,46 +100,55 @@ class ChatSessionView(APIView):
     )
     def post(self, request):
         try:
-            # Ensure user is properly authenticated
-            # logger.info(f"Authenticated user: {request.user} (Type: {type(request.user)})")
-
+            # Ensure the user is properly authenticated
             if not isinstance(request.user, User):
                 return Response({"error": "User is not authenticated correctly"}, status=400)
 
-            # 1. Create a new ChatSession
-            chat_session = ChatSession.objects.create(user=request.user)
+            # 1. Retrieve bot_id from the request data or query parameters
+            bot_id = request.data.get("bot_id") or request.query_params.get("bot_id")
+            if bot_id:
+                try:
+                    bot = ChatBot.objects.get(pk=bot_id)
+                except ChatBot.DoesNotExist:
+                    logger.error("Invalid bot_id provided, defaulting to first available ChatBot.")
+                    bot = ChatBot.objects.first()
+            else:
+                bot = ChatBot.objects.first()
 
-            # 2. Select a random scenario
+            if not bot:
+                logger.error("No ChatBot available in the system.")
+                return Response({"error": "No ChatBot available."}, status=500)
+
+            # 2. Create a new ChatSession and attach the selected ChatBot
+            chat_session = ChatSession.objects.create(user=request.user, bot=bot)
+
+            # 3. Select a random scenario
             if not SCENARIOS:
                 logger.error("No scenarios available to select.")
                 return Response({"error": "No scenarios available. Please contact support."}, status=500)
 
             selected_scenario = random.choice(SCENARIOS)
-            # logger.info(f"Selected Scenario: {selected_scenario}")
-            scenario = selected_scenario["scenario"]
 
-            # 3. Format the INITIAL_PROMPT with the selected scenario
-            formatted_initial_prompt = INITIAL_PROMPT.format(name=selected_scenario["ai_name"],custom_role=selected_scenario["ai_role"])
+            # 4. Format the prompt using the selected bot's prompt instead of INITIAL_PROMPT
+            formatted_initial_prompt = bot.prompt.format(
+                name=selected_scenario["ai_name"],
+                custom_role=selected_scenario["ai_role"]
+            )
 
-            # logger.info("Saving chat message..........")
-
-            # 4. Save the formatted system message with the custom scenario
+            # 5. Save the formatted system message with the custom scenario
             system_message = ChatMessage.objects.create(
                 session=chat_session,
                 sender="system",
                 content=formatted_initial_prompt
             )
 
-            # 5. Prepare messages for AI (including the formatted system message)
+            # 6. Prepare messages for the AI (including the formatted system message)
             messages = [{"role": "system", "content": formatted_initial_prompt}]
-            
-            # logger.info("Getting AI Response.......")
 
-            # 6. Get AI response to the initial prompt
+            # 7. Get AI response to the initial prompt
             ai_response = get_ai_response(messages)
-            # logger.info(f"AI Response: {ai_response}")
 
-            # 7. Save AI response
+            # 8. Save the AI response
             ai_msg = ChatMessage.objects.create(
                 session=chat_session,
                 sender="assistant",
@@ -129,7 +159,7 @@ class ChatSessionView(APIView):
                 "message": "Chat session created successfully",
                 "session_id": chat_session.id,
                 "ai_response": ai_msg.content,
-                "custom_scenario": selected_scenario  # Optional: Return the scenario to the user
+                "custom_scenario": selected_scenario
             }, status=201)
 
         except Exception as e:
@@ -139,7 +169,6 @@ class ChatSessionView(APIView):
                 "session_id": None,
                 "ai_response": None
             }, status=500)
-
 
 
 class ChatMessageView(APIView):

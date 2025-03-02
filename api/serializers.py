@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, ChatSession, ChatMessage, ReportCard
+from .models import User, ChatSession, ChatMessage, ReportCard, ChatBot
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -21,3 +21,9 @@ class ReportCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReportCard
         fields = '__all__'
+
+class ChatBotListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChatBot
+        # Note: 'prompt' is intentionally excluded from the fields list.
+        fields = ('id', 'name', 'description', 'created_at', 'updated_at')
