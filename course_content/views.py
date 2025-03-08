@@ -208,17 +208,19 @@ class TrainingPlanStatusView(APIView):
         responses={200: openapi.Schema(
             type=openapi.TYPE_OBJECT,
             properties={
-                'is_locked': openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Training plan lock status")
+                'is_locked': openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Training plan lock status"),
+                'new_user': openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Whether this is a new user or newly unlocked content")
             }
         )}
     )
     def get(self, request, format=None):
         new_user = False
-
-        # Unlock Category with id=4 if not already unlocked.
-        try:
-            category = Category.objects.get(pk=4)
-            category_ctype = ContentType.objects.get_for_model(Category)
+        category_ctype = ContentType.objects.get_for_model(Category)
+        subcategory_ctype = ContentType.objects.get_for_model(SubCategory)
+        
+        # Unlock all categories
+        categories = Category.objects.all().order_by('order')
+        for category in categories:
             access, created = UserContentAccess.objects.get_or_create(
                 user=request.user,
                 content_type=category_ctype,
@@ -227,33 +229,84 @@ class TrainingPlanStatusView(APIView):
             )
             if created:
                 new_user = True
-                logger.info("Category unlocked for the first time.")
+                logger.info(f"Category {category.name} (ID: {category.pk}) unlocked for the first time.")
             elif not access.allowed:
                 access.allowed = True
                 access.save()
                 new_user = True
-                logger.info("Category was locked and is now unlocked.")
+                logger.info(f"Category {category.name} (ID: {category.pk}) was locked and is now unlocked.")
+        
+        # Unlock one subcategory for each category (the first one by order)
+        for category in categories:
+            # Get the first subcategory by order for this category
+            first_subcategory = SubCategory.objects.filter(
+                category=category
+            ).order_by('order').first()
+            
+            if first_subcategory:
+                access, created = UserContentAccess.objects.get_or_create(
+                    user=request.user,
+                    content_type=subcategory_ctype,
+                    object_id=first_subcategory.pk,
+                    defaults={'allowed': True}
+                )
+                if created:
+                    new_user = True
+                    logger.info(f"Subcategory {first_subcategory.name} (ID: {first_subcategory.pk}) unlocked for the first time.")
+                elif not access.allowed:
+                    access.allowed = True
+                    access.save()
+                    new_user = True
+                    logger.info(f"Subcategory {first_subcategory.name} (ID: {first_subcategory.pk}) was locked and is now unlocked.")
+                
+                # Unlock the first lesson in this subcategory
+                first_lesson = Lesson.objects.filter(
+                    subcategory=first_subcategory
+                ).order_by('order').first()
+                
+                if first_lesson:
+                    lesson_ctype = ContentType.objects.get_for_model(Lesson)
+                    access, created = UserContentAccess.objects.get_or_create(
+                        user=request.user,
+                        content_type=lesson_ctype,
+                        object_id=first_lesson.pk,
+                        defaults={'allowed': True}
+                    )
+                    if created:
+                        logger.info(f"Lesson {first_lesson.title} (ID: {first_lesson.pk}) unlocked for the first time.")
+                    elif not access.allowed:
+                        access.allowed = True
+                        access.save()
+                        logger.info(f"Lesson {first_lesson.title} (ID: {first_lesson.pk}) was locked and is now unlocked.")
+
+        # For backward compatibility, still unlock the specific items from the original code
+        # Unlock Category with id=4 if not already unlocked.
+        try:
+            category = Category.objects.get(pk=4)
+            access, created = UserContentAccess.objects.get_or_create(
+                user=request.user,
+                content_type=category_ctype,
+                object_id=category.pk,
+                defaults={'allowed': True}
+            )
+            if not created and not access.allowed:
+                access.allowed = True
+                access.save()
         except Category.DoesNotExist:
             logger.error("Category with id 4 not found.")
 
         # Unlock Subcategory with id=12 if not already unlocked.
         try:
             subcategory = SubCategory.objects.get(pk=12)
-            subcategory_ctype = ContentType.objects.get_for_model(SubCategory)
             access, created = UserContentAccess.objects.get_or_create(
                 user=request.user,
                 content_type=subcategory_ctype,
                 object_id=subcategory.pk,
                 defaults={'allowed': True}
             )
-            if created:
-                new_user = True
-                logger.info("Subcategory unlocked for the first time.")
-            elif not access.allowed:
+            if not created and not access.allowed:
                 access.allowed = True
                 access.save()
-                new_user = True
-                logger.info("Subcategory was locked and is now unlocked.")
         except SubCategory.DoesNotExist:
             logger.error("Subcategory with id 12 not found.")
 
@@ -267,19 +320,13 @@ class TrainingPlanStatusView(APIView):
                 object_id=lesson.pk,
                 defaults={'allowed': True}
             )
-            if created:
-                new_user = True
-                logger.info("Lesson unlocked for the first time.")
-            elif not access.allowed:
+            if not created and not access.allowed:
                 access.allowed = True
                 access.save()
-                new_user = True
-                logger.info("Lesson was locked and is now unlocked.")
         except Lesson.DoesNotExist:
             logger.error("Lesson with id 19 not found.")
 
         # Retrieve all categories and determine if at least one category is unlocked.
-        categories = Category.objects.all()
         any_unlocked = any(is_content_accessible(request.user, category) for category in categories)
         is_locked = not any_unlocked
 
