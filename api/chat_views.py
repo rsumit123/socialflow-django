@@ -347,6 +347,7 @@ class ChatMessageView(APIView):
                         }
                     }
                 return Response(response_data, status=status.HTTP_200_OK)
+    
             else:
                 return Response({
                     "user_message": user_msg.content,

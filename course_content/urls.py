@@ -6,7 +6,8 @@ from .views import (
     LessonViewSet,
     LessonProgressViewSet,
     EvaluateLessonView,
-    TrainingPlanStatusView  # import the new view
+    TrainingPlanStatusView,  # import the new view
+    SubCategoryIntroView  # Add the new view
 )
 
 router = DefaultRouter()
@@ -19,4 +20,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('training_plan_status/', TrainingPlanStatusView.as_view(), name='training_plan_status'),
     path('evaluate-lesson/', EvaluateLessonView.as_view(), name="evaluate_lesson"),
+    path('subcategory-intro/<int:subcategory_id>/', SubCategoryIntroView.as_view(), name="subcategory_intro"),
 ]

@@ -1,0 +1,1016 @@
+INFO 2025-03-02 08:03:14,310 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-02 08:03:14,759 utils Using deepseek
+INFO 2025-03-02 08:03:14,761 chat_views Loaded 10 scenarios from scenarios.json.
+WARNING 2025-03-02 08:03:35,037 log Forbidden: /api/chat/sessions/
+DEBUG 2025-03-02 08:03:35,109 _trace connect_tcp.started host='dpnghrtnqvssbodyanzs.supabase.co' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG 2025-03-02 08:03:35,205 _trace connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1089ad9a0>
+DEBUG 2025-03-02 08:03:35,206 _trace start_tls.started ssl_context=<ssl.SSLContext object at 0x1075976c0> server_hostname='dpnghrtnqvssbodyanzs.supabase.co' timeout=5.0
+DEBUG 2025-03-02 08:03:35,266 _trace start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10899a160>
+DEBUG 2025-03-02 08:03:35,267 _trace send_connection_init.started request=<Request [b'GET']>
+DEBUG 2025-03-02 08:03:35,267 _trace send_connection_init.complete
+DEBUG 2025-03-02 08:03:35,267 _trace send_request_headers.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 1 with 6 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 23 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 4 with 6 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 10 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 19 with 6 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 3 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 58 with 6 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 14 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 10 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Encoding 13 with 7 bits
+DEBUG 2025-03-02 08:03:35,268 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,269 hpack Encoding 5 with 7 bits
+DEBUG 2025-03-02 08:03:35,269 hpack Encoding 167 with 7 bits
+DEBUG 2025-03-02 08:03:35,269 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:03:35,269 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:03:35,269 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:03:35,270 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,270 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:35,270 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:35,270 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:35,270 hpack Encoding 31 with 6 bits
+DEBUG 2025-03-02 08:03:35,270 hpack Encoding 22 with 7 bits
+DEBUG 2025-03-02 08:03:35,270 hpack Encoded header block to b'\x82A\x97\x92\xba\xa6\x9e\xc4\xd5\xdb\xba\x11\x19\xe4\xf4:\xbd\xa1t[X\xe3\x1a\n\xb9\x0f\x87D\x8a`v\xa6v;\x85\x8bP[?S\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.\'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8dE\xb5\x8e1\xa0\xabW\xe9\x81.\x16W\x07@\x85\x1df\xea__\xff(/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\xdb\xe2:d9*\xdbi??}\x90Y{\xfe\xe3\xa2x\xea\xaf\xdeCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd1\xef\xa8\xb4_\xd0\r\x1e\xf2#%<Z%\xec\x8eh\xe9\x08t\xef\xc0\xce\xad\xfb=\xe8\xa8\x0b\xe3\x04\xec\xf6\xe9\x7f/,W\xff\n\xfd\xeer"\x18M\x9e\xcd[?4[\xc9\xbe\xf2\xa7\x99\xf9\xec\xb7\xa3wj\xe7\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h@\x90\xf2\xb2-\xacq\x8d\x05Xu\x99n\xe5\xb1\x06=_\x87\x10\x04\xd2\xc0\n\xc0\x0f_\x96\x1du\xd0b\r&=LtA\xea\xfb$\xe3\xb1\x05L\x1c7\xe1Y\xef'
+DEBUG 2025-03-02 08:03:35,270 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:03:35,270 _trace send_request_body.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:35,270 _trace send_request_body.complete
+DEBUG 2025-03-02 08:03:35,270 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:35,320 _trace receive_remote_settings.started
+DEBUG 2025-03-02 08:03:35,321 _trace receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=SettingCodes.MAX_CONCURRENT_STREAMS, original_value=None, new_value=100), ChangedSetting(setting=SettingCodes.INITIAL_WINDOW_SIZE, original_value=65535, new_value=65536), ChangedSetting(setting=SettingCodes.MAX_FRAME_SIZE, original_value=16384, new_value=16777215)}>
+DEBUG 2025-03-02 08:03:35,766 hpack Decoding b'?\xe1\x1f\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\x0c\xdce\xb51h\xdf_\x8b\x1du\xd0b\r&=LtA\xea@\x85$\xabX?_\x8f|/\xca\xe0\n&\xe3\x91\xa0\xba1-\xa2\x18\x7f@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xabx\x8c\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00?{\x91\xd5a\xa65_JBB\x16\xb4\xad\x82\xa2\x1eCU7@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x8f\x92\xba\xa6\x9e\xc4\xd5\xdb\xba\x11\x19\xe4\xf4:\xbd\xa3@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x0210v\x87%\x07\xb6Ih\x1d\x85@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+DEBUG 2025-03-02 08:03:35,766 hpack Decoded 4096, consumed 3 bytes
+DEBUG 2025-03-02 08:03:35,767 table Resizing header table to 4096 from 4096
+DEBUG 2025-03-02 08:03:35,767 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,767 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:03:35,767 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,767 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:03:35 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 31, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 11, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded (b'content-type', b'application/json'), total consumed 13 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded (b'cf-ray', b'919f60e25bd417a2-MAA'), total consumed 23 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 10, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,768 hpack Decoded 6, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 26, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 3, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 56, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 12, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), total consumed 14 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 59, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 17, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,769 hpack Decoded 13, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded (b'sb-gateway-version', <memory at 0x1089ee880>), total consumed 17 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded 10, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), total consumed 28 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded 16, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,770 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089eeac0>), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded 21, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,771 hpack Decoded 2, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089ee4c0>), total consumed 26 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded 54, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded 7, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded 16, consumed 1 bytes
+DEBUG 2025-03-02 08:03:35,772 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:35,772 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:03:35 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f60e25bd417a2-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'10'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:03:35,773 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:03:35,773 _trace receive_response_body.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:35,774 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:03:35,774 _trace response_closed.started stream_id=1
+DEBUG 2025-03-02 08:03:35,774 _trace response_closed.complete
+DEBUG 2025-03-02 08:03:38,032 _trace send_request_headers.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:38,033 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,033 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:03:38,033 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,033 hpack Encoding 69 with 7 bits
+DEBUG 2025-03-02 08:03:38,033 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 68 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 67 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 66 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 65 with 7 bits
+DEBUG 2025-03-02 08:03:38,034 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,034 hpack Encoding 64 with 7 bits
+DEBUG 2025-03-02 08:03:38,035 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:03:38,035 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:03:38,036 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:03:38,036 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,036 hpack Encoding 63 with 7 bits
+DEBUG 2025-03-02 08:03:38,036 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:38,036 hpack Encoding 62 with 7 bits
+DEBUG 2025-03-02 08:03:38,036 hpack Encoded header block to b'\x82\xc5\x87\xc4\xc3\x90\xc2\xc1\xc0\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h\xbf\xbe'
+DEBUG 2025-03-02 08:03:38,037 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:03:38,037 _trace send_request_body.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:38,037 _trace send_request_body.complete
+DEBUG 2025-03-02 08:03:38,037 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:38,181 hpack Decoding b'\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\x0c\xdce\xe51h\xdf\xcb\x7f\x0b\x8f|/\xca\xe0%dde\x90\xba1-\xa2\x18\x7f\xca\xc9\xc8\xc7\xc6\xc5\xc4\xc3\x7f\x03\x013\xc2\xc1'
+DEBUG 2025-03-02 08:03:38,181 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:03:38 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded 75, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,182 hpack Decoded (b'content-type', b'application/json'), consumed 1
+DEBUG 2025-03-02 08:03:38,183 hpack Decoded 74, consumed 2 bytes
+DEBUG 2025-03-02 08:03:38,183 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,183 hpack Decoded (b'cf-ray', b'919f60f3ac3317a2-MAA'), total consumed 18 bytes, indexed True
+DEBUG 2025-03-02 08:03:38,183 hpack Decoded 74, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,183 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), consumed 1
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded 73, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded (b'content-encoding', b'gzip'), consumed 1
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded 72, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), consumed 1
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded 71, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), consumed 1
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded 70, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded (b'sb-gateway-version', <memory at 0x1089ee880>), consumed 1
+DEBUG 2025-03-02 08:03:38,184 hpack Decoded 69, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), consumed 1
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded 68, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded (b'x-content-type-options', b'nosniff'), consumed 1
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded 67, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089eeac0>), consumed 1
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded 66, consumed 2 bytes
+DEBUG 2025-03-02 08:03:38,185 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,186 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089a01c0>), total consumed 4 bytes, indexed True
+DEBUG 2025-03-02 08:03:38,186 hpack Decoded 66, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,186 hpack Decoded (b'server', b'cloudflare'), consumed 1
+DEBUG 2025-03-02 08:03:38,186 hpack Decoded 65, consumed 1 bytes
+DEBUG 2025-03-02 08:03:38,186 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), consumed 1
+DEBUG 2025-03-02 08:03:38,187 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:03:38 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f60f3ac3317a2-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'3'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:03:38,188 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:03:38,188 _trace receive_response_body.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:38,189 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:03:38,189 _trace response_closed.started stream_id=3
+DEBUG 2025-03-02 08:03:38,189 _trace response_closed.complete
+DEBUG 2025-03-02 08:03:54,213 _trace close.started
+DEBUG 2025-03-02 08:03:54,214 _trace close.complete
+DEBUG 2025-03-02 08:03:54,214 _trace connect_tcp.started host='dpnghrtnqvssbodyanzs.supabase.co' port=443 local_address=None timeout=5.0 socket_options=None
+DEBUG 2025-03-02 08:03:54,266 _trace connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x108a561f0>
+DEBUG 2025-03-02 08:03:54,267 _trace start_tls.started ssl_context=<ssl.SSLContext object at 0x1075976c0> server_hostname='dpnghrtnqvssbodyanzs.supabase.co' timeout=5.0
+DEBUG 2025-03-02 08:03:54,329 _trace start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10899a670>
+DEBUG 2025-03-02 08:03:54,330 _trace send_connection_init.started request=<Request [b'GET']>
+DEBUG 2025-03-02 08:03:54,331 _trace send_connection_init.complete
+DEBUG 2025-03-02 08:03:54,331 _trace send_request_headers.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:54,332 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,332 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:03:54,332 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,332 hpack Encoding 1 with 6 bits
+DEBUG 2025-03-02 08:03:54,333 hpack Encoding 23 with 7 bits
+DEBUG 2025-03-02 08:03:54,333 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,333 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:54,334 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,334 hpack Encoding 4 with 6 bits
+DEBUG 2025-03-02 08:03:54,334 hpack Encoding 10 with 7 bits
+DEBUG 2025-03-02 08:03:54,334 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,334 hpack Encoding 19 with 6 bits
+DEBUG 2025-03-02 08:03:54,335 hpack Encoding 3 with 7 bits
+DEBUG 2025-03-02 08:03:54,335 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,335 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:54,335 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,335 hpack Encoding 58 with 6 bits
+DEBUG 2025-03-02 08:03:54,335 hpack Encoding 14 with 7 bits
+DEBUG 2025-03-02 08:03:54,335 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,335 hpack Encoding 10 with 7 bits
+DEBUG 2025-03-02 08:03:54,336 hpack Encoding 13 with 7 bits
+DEBUG 2025-03-02 08:03:54,336 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,336 hpack Encoding 5 with 7 bits
+DEBUG 2025-03-02 08:03:54,336 hpack Encoding 167 with 7 bits
+DEBUG 2025-03-02 08:03:54,336 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:03:54,336 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:03:54,338 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:03:54,338 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,338 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:54,338 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:54,339 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:54,339 hpack Encoding 31 with 6 bits
+DEBUG 2025-03-02 08:03:54,339 hpack Encoding 22 with 7 bits
+DEBUG 2025-03-02 08:03:54,339 hpack Encoded header block to b'\x82A\x97\x92\xba\xa6\x9e\xc4\xd5\xdb\xba\x11\x19\xe4\xf4:\xbd\xa1t[X\xe3\x1a\n\xb9\x0f\x87D\x8a`v\xa6v;\x85\x8bP[?S\x83\xf9c\xe7\x90z\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.\'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8dE\xb5\x8e1\xa0\xabW\xe9\x81.\x16W\x07@\x85\x1df\xea__\xff(/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)\xdb\xe2:d9*\xdbi??}\x90Y{\xfe\xe3\xa2x\xea\xaf\xdeCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd1\xef\xa8\xb4_\xd0\r\x1e\xf2#%<Z%\xec\x8eh\xe9\x08t\xef\xc0\xce\xad\xfb=\xe8\xa8\x0b\xe3\x04\xec\xf6\xe9\x7f/,W\xff\n\xfd\xeer"\x18M\x9e\xcd[?4[\xc9\xbe\xf2\xa7\x99\xf9\xec\xb7\xa3wj\xe7\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h@\x90\xf2\xb2-\xacq\x8d\x05Xu\x99n\xe5\xb1\x06=_\x87\x10\x04\xd2\xc0\n\xc0\x0f_\x96\x1du\xd0b\r&=LtA\xea\xfb$\xe3\xb1\x05L\x1c7\xe1Y\xef'
+DEBUG 2025-03-02 08:03:54,339 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:03:54,339 _trace send_request_body.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:54,339 _trace send_request_body.complete
+DEBUG 2025-03-02 08:03:54,339 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:54,383 _trace receive_remote_settings.started
+DEBUG 2025-03-02 08:03:54,384 _trace receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=SettingCodes.MAX_CONCURRENT_STREAMS, original_value=None, new_value=100), ChangedSetting(setting=SettingCodes.INITIAL_WINDOW_SIZE, original_value=65535, new_value=65536), ChangedSetting(setting=SettingCodes.MAX_FRAME_SIZE, original_value=16384, new_value=16777215)}>
+DEBUG 2025-03-02 08:03:54,451 hpack Decoding b'?\xe1\x1f\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\x0c\xdcm\xa51h\xdf_\x8b\x1du\xd0b\r&=LtA\xea@\x85$\xabX?_\x8f|/\xca\xe0[}\xe2\x84Atd[D0\xff@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xabx\x8c\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00?{\x91\xd5a\xa65_JBB\x16\xb4\xad\x82\xa2\x1eCU7@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x8f\x92\xba\xa6\x9e\xc4\xd5\xdb\xba\x11\x19\xe4\xf4:\xbd\xa3@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x012v\x87%\x07\xb6Ih\x1d\x85@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+DEBUG 2025-03-02 08:03:54,452 hpack Decoded 4096, consumed 3 bytes
+DEBUG 2025-03-02 08:03:54,452 table Resizing header table to 4096 from 4096
+DEBUG 2025-03-02 08:03:54,452 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,452 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:03:54,452 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,452 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,453 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:03:54 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,453 hpack Decoded 31, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,453 hpack Decoded 11, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,453 hpack Decoded (b'content-type', b'application/json'), total consumed 13 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,453 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded (b'cf-ray', b'919f61598e1217ac-MAA'), total consumed 23 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded 10, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded 6, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded 26, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,454 hpack Decoded 3, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 56, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 12, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), total consumed 14 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 59, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 17, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 13, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,455 hpack Decoded (b'sb-gateway-version', <memory at 0x1089a0400>), total consumed 17 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 10, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), total consumed 28 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 16, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089a0dc0>), total consumed 19 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 21, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,456 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089a0280>), total consumed 25 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded 54, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded 7, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded 5, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded 16, consumed 1 bytes
+DEBUG 2025-03-02 08:03:54,457 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:54,457 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:03:54 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f61598e1217ac-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'2'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:03:54,459 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:03:54,459 _trace receive_response_body.started request=<Request [b'GET']> stream_id=1
+DEBUG 2025-03-02 08:03:54,460 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:03:54,460 _trace response_closed.started stream_id=1
+DEBUG 2025-03-02 08:03:54,460 _trace response_closed.complete
+DEBUG 2025-03-02 08:03:55,149 _trace send_request_headers.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:55,150 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,150 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:03:55,152 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,152 hpack Encoding 69 with 7 bits
+DEBUG 2025-03-02 08:03:55,152 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,152 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:03:55,153 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,153 hpack Encoding 68 with 7 bits
+DEBUG 2025-03-02 08:03:55,153 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,153 hpack Encoding 67 with 7 bits
+DEBUG 2025-03-02 08:03:55,153 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,153 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:03:55,153 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,153 hpack Encoding 66 with 7 bits
+DEBUG 2025-03-02 08:03:55,154 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,154 hpack Encoding 65 with 7 bits
+DEBUG 2025-03-02 08:03:55,154 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,154 hpack Encoding 64 with 7 bits
+DEBUG 2025-03-02 08:03:55,155 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:03:55,155 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:03:55,156 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:03:55,156 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,156 hpack Encoding 63 with 7 bits
+DEBUG 2025-03-02 08:03:55,156 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:03:55,156 hpack Encoding 62 with 7 bits
+DEBUG 2025-03-02 08:03:55,156 hpack Encoded header block to b'\x82\xc5\x87\xc4\xc3\x90\xc2\xc1\xc0\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h\xbf\xbe'
+DEBUG 2025-03-02 08:03:55,156 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:03:55,156 _trace send_request_body.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:55,157 _trace send_request_body.complete
+DEBUG 2025-03-02 08:03:55,157 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:55,309 hpack Decoding b'\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\x0c\xdcm\xb51h\xdf\xcb\x7f\x0b\x8e|/\xca\xe0[(\xc6)\x02\xe8\xc8\xb6\x88a\xca\xc9\xc8\xc7\xc6\xc5\xc4\xc3\x7f\x03\x015\xc2\xc1'
+DEBUG 2025-03-02 08:03:55,310 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,310 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:03:55,310 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,311 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,311 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:03:55 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:03:55,311 hpack Decoded 75, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,311 hpack Decoded (b'content-type', b'application/json'), consumed 1
+DEBUG 2025-03-02 08:03:55,311 hpack Decoded 74, consumed 2 bytes
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded 14, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded (b'cf-ray', b'919f615eaa2d17ac-MAA'), total consumed 17 bytes, indexed True
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded 74, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), consumed 1
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded 73, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded (b'content-encoding', b'gzip'), consumed 1
+DEBUG 2025-03-02 08:03:55,312 hpack Decoded 72, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), consumed 1
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded 71, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), consumed 1
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded 70, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded (b'sb-gateway-version', <memory at 0x1089a0400>), consumed 1
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded 69, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,313 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), consumed 1
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded 68, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded (b'x-content-type-options', b'nosniff'), consumed 1
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded 67, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089a0dc0>), consumed 1
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded 66, consumed 2 bytes
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded 1, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089a0580>), total consumed 4 bytes, indexed True
+DEBUG 2025-03-02 08:03:55,314 hpack Decoded 66, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,315 hpack Decoded (b'server', b'cloudflare'), consumed 1
+DEBUG 2025-03-02 08:03:55,315 hpack Decoded 65, consumed 1 bytes
+DEBUG 2025-03-02 08:03:55,315 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), consumed 1
+DEBUG 2025-03-02 08:03:55,315 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:03:55 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f615eaa2d17ac-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'5'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:03:55,319 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:03:55,320 _trace receive_response_body.started request=<Request [b'GET']> stream_id=3
+DEBUG 2025-03-02 08:03:55,320 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:03:55,321 _trace response_closed.started stream_id=3
+DEBUG 2025-03-02 08:03:55,321 _trace response_closed.complete
+DEBUG 2025-03-02 08:04:00,033 _trace send_request_headers.started request=<Request [b'GET']> stream_id=5
+DEBUG 2025-03-02 08:04:00,033 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,034 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:04:00,034 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,034 hpack Encoding 69 with 7 bits
+DEBUG 2025-03-02 08:04:00,034 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,034 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:04:00,034 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,034 hpack Encoding 68 with 7 bits
+DEBUG 2025-03-02 08:04:00,034 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,034 hpack Encoding 67 with 7 bits
+DEBUG 2025-03-02 08:04:00,034 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,035 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:04:00,035 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,035 hpack Encoding 66 with 7 bits
+DEBUG 2025-03-02 08:04:00,035 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,035 hpack Encoding 65 with 7 bits
+DEBUG 2025-03-02 08:04:00,035 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,035 hpack Encoding 64 with 7 bits
+DEBUG 2025-03-02 08:04:00,035 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:04:00,035 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:04:00,036 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:04:00,037 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,037 hpack Encoding 63 with 7 bits
+DEBUG 2025-03-02 08:04:00,037 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:00,037 hpack Encoding 62 with 7 bits
+DEBUG 2025-03-02 08:04:00,037 hpack Encoded header block to b'\x82\xc5\x87\xc4\xc3\x90\xc2\xc1\xc0\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h\xbf\xbe'
+DEBUG 2025-03-02 08:04:00,038 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:04:00,038 _trace send_request_body.started request=<Request [b'GET']> stream_id=5
+DEBUG 2025-03-02 08:04:00,038 _trace send_request_body.complete
+DEBUG 2025-03-02 08:04:00,038 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=5
+DEBUG 2025-03-02 08:04:00,133 hpack Decoding b'\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\r\\\x00\x14\xc5\xa3\x7f\xce\x7f\x0e\x8e|/\xca\xe0]\x90D\x00\xc2\xe8\xc8\xb6\x88a\xcd\xcc\xcb\xca\xc9\xc8\xc7\xc6\xc5\xc4\xc3'
+DEBUG 2025-03-02 08:04:00,134 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,134 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:04:00 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded 78, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded (b'content-type', b'application/json'), consumed 1
+DEBUG 2025-03-02 08:04:00,135 hpack Decoded 77, consumed 2 bytes
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded 14, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded (b'cf-ray', b'919f617d2c0a17ac-MAA'), total consumed 17 bytes, indexed True
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded 77, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), consumed 1
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded 76, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded (b'content-encoding', b'gzip'), consumed 1
+DEBUG 2025-03-02 08:04:00,136 hpack Decoded 75, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), consumed 1
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded 74, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), consumed 1
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded 73, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded (b'sb-gateway-version', <memory at 0x1089a0400>), consumed 1
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded 72, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,137 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), consumed 1
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded 71, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded (b'x-content-type-options', b'nosniff'), consumed 1
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded 70, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089a0dc0>), consumed 1
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded 69, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089a0280>), consumed 1
+DEBUG 2025-03-02 08:04:00,138 hpack Decoded 68, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,139 hpack Decoded (b'server', b'cloudflare'), consumed 1
+DEBUG 2025-03-02 08:04:00,139 hpack Decoded 67, consumed 1 bytes
+DEBUG 2025-03-02 08:04:00,139 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), consumed 1
+DEBUG 2025-03-02 08:04:00,139 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:04:00 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f617d2c0a17ac-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'2'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:04:00,140 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:04:00,141 _trace receive_response_body.started request=<Request [b'GET']> stream_id=5
+DEBUG 2025-03-02 08:04:00,141 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:04:00,142 _trace response_closed.started stream_id=5
+DEBUG 2025-03-02 08:04:00,142 _trace response_closed.complete
+DEBUG 2025-03-02 08:04:01,503 _trace send_request_headers.started request=<Request [b'GET']> stream_id=7
+DEBUG 2025-03-02 08:04:01,503 hpack Adding (b':method', b'GET') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,503 hpack Encoding 2 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b':authority', b'dpnghrtnqvssbodyanzs.supabase.co') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 69 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 7 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b':path', b'/auth/v1/user') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 68 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 67 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b'accept-encoding', b'gzip, deflate') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 16 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 66 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b'x-client-info', b'supabase-py/2.13.0') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,504 hpack Encoding 65 with 7 bits
+DEBUG 2025-03-02 08:04:01,504 hpack Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRwbmdocnRucXZzc2JvZHlhbnpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MDM0MzIsImV4cCI6MjA1NTE3OTQzMn0.H0h3qjDJWGDXe9CYdsAAiLrOQXMuW5vftYoYQuj5BnY') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,505 hpack Encoding 64 with 7 bits
+DEBUG 2025-03-02 08:04:01,505 hpack Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6InFWTFc5Qis0SGtiUnZDYVAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2RwbmdocnRucXZzc2JvZHlhbnpzLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI0NmRhYzgyYS04NTk3LTRlYmYtOGQwMi0xYzE2ZWNhMzBjYmIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQwOTAyNzQ3LCJpYXQiOjE3NDA4OTkxNDcsImVtYWlsIjoicnN1bWl0MTIzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJyc3VtaXQxMjNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiNDZkYWM4MmEtODU5Ny00ZWJmLThkMDItMWMxNmVjYTMwY2JiIn0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NDA4OTkxNDd9XSwic2Vzc2lvbl9pZCI6IjIxNmE1NmMzLTAyOGUtNDhjZS04MmViLTJkOGVjY2ZhNDgwNSIsImlzX2Fub255bW91cyI6ZmFsc2V9.TGanfl6H75A-gu4zdCq_wHnrZt8lwt0Z5nrz89SZWbs') to the header table, sensitive:True, huffman:True
+DEBUG 2025-03-02 08:04:01,505 hpack Encoding 23 with 4 bits
+DEBUG 2025-03-02 08:04:01,506 hpack Encoding 691 with 7 bits
+DEBUG 2025-03-02 08:04:01,506 hpack Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,506 hpack Encoding 63 with 7 bits
+DEBUG 2025-03-02 08:04:01,506 hpack Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+DEBUG 2025-03-02 08:04:01,506 hpack Encoding 62 with 7 bits
+DEBUG 2025-03-02 08:04:01,506 hpack Encoded header block to b'\x82\xc5\x87\xc4\xc3\x90\xc2\xc1\xc0\x1f\x08\xff\xb4\x04\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x94\xa6\xbf\xdb\xd9\x1c\xc9V\x1e[\xf0\x91\xbd\x86@7bI\xb8U\xfb\x7f\x9f\x18M\x9e\xf6P\x17\xf2\x13j6\\\xdcC\xb0\xd2\xec\\\xbe\xb2\xd6Ft\x1bQ\xb2\x9eL{|\x13\xd9\xfb\xe7\x16\xdf\x11\xd3!\xc9V\xdbI\xf9\xfb\xec\x82\xcb\xdf\xf7\x1d\x13\xc7U~\xf3\xd5\xa4$\xc5\x84\xdc\xff4\xd1\x9e\x9d=\xf3\x8b\x08d\xc57y:`6{\xd9}\xc9\xcb!\xb5\x1b 4\xd3\xb6~~\xe6\xf5\xcfp\x1a\xd3\xbf\xab9\xf7\xed\xa3\x9d<\xd3\xab\x16\xcf\x1a\x0c\x0f<\xfd\xe0\x17\xef-3\xe8\xf7w\xa7:r\x1b=\xec\xb3\xc9\xcba\xb5\x1b,\xf2~m?\xef&\xc0>Zg\x93\x17\x1e\xb9\r\xe0\xdf\xbf\x93\xf8\xc9\xd0\xfet\xfb\xd9\xe3V\xf8}i\xf7\xb1\x9c\xf7\xb2\xd7\xcf\xf3a\xb5t\xc0\xce\x9b\xf0\xb5\xab\x7f_:o\x91\x19)\xe2\x9e|\xa8FN\x871*\xd2\x18\xf9P\r\x1b\xf2{\xd9\x8aD\xf3\xe5B3\xd3\xa7\xbc{\xb2#%WO\x18\x9b\xa3\'C\x9b!\xbc\x1b\x9f\xe5\xdf\x1f\x82\r\x12b\xc3\xd7\x9f\xe6\xd9\xf2t\xad\xdc\x95]\xf5\x1b?\xb5\xfe\xe2\xe3\xeb\'C\x9b\xf7\x90g\x1f/\x06\xcf{/\x82R\xf8\x87\xcbm\x04\xabA\xb5P\x83~\xf2\x0c\xe3\xe5\xe0\xdf\x9f\x80FJ\xb8\xfb\xfd\xfc\xcb,|\xb8\x83\x9f-\xb3\xc9\x8b\x01\xb5T\x83~\xf2\x0c\xe3\xe5\xe0\xda\x8d\x97\xd1\x19\xe2\x91\xfel\xf3\xa3\xa6\x98\x7fD\x19\xc7\xcb\xc5\xbc\xc4\xfar\x1b\xc1\xbfy\x06q\xf2\xf3,\x94\xf1\xf4>_\xb5\xfe\xf2\xd8mUm\xf5\'.\x08\xc9U\xd3\xc6&\xe8\xfcg\xf6\x82SE#\xe5\xc7\xaeN\x95\xd3\xcf\x97\x9f\x7f\xbb\xbc\x18\x8c\xf16N\x876\x9b\xff\xbdy\xf2\xd0\xd6\x8ap\'U\xfe\r\xe9\xf4\x00~\xf2\xcbN}\xf3\xf5\xd1\x7f"tr\xd1\xe7M<zs\xdf\xa3\xc71e6J\x80\x8c\x95e\xef\x1e.\x06\xd4l\xb3\xc9\xf9\xb4\xff\xbc\x9b\x00\xf9i\x9eL\\z\xe47\x83s\xe5\x85\x19:\x1c\xdc\xf9aF\x8d\xd9\x11\x92\x9c)!\xb29\xc9\x94\x1a>\\@<O\xf5\xc9\xd0\xe6&,>\xc8\xcc\x9d\xc9N\xc3g\xbd\x94\x03\xe4\x1a\x08\xce\xd9\xe3\xfc\x84\xda\xba`gM\xf8Z\xd5\xbf\xaf\x9d7\xe4\x7f\xf3w\x83\x10\\}\x90Tw\x8e\x87\xeb\xfd\xbd\x91\xcc\x9d2y\xd3N\x00\xe9\xa7G\xbc\xfb\xe1\xf5\xab\x17\x04\xe9\xbf?O\xdd\xc0kE<M\x9f~^\xba\xb1q\xe9\xcc_\xb3\xe9\xbf7\x8d;\xb2#%4{\xfc\x16\x1bc\x13m\xc7\xc9\xf0\x93\xd6G?i\xc2\x82\x0b\x8b\xeb\xef\xc4:\xa5\xa1\xccn\xb7\n\xd3Z\xd7\xb9/v\x8b\xc6:\xac\xfdK\xd4xH?[\xaa\xcfo?\xbb\xf7\x94h\xbf\xbe'
+DEBUG 2025-03-02 08:04:01,506 _trace send_request_headers.complete
+DEBUG 2025-03-02 08:04:01,507 _trace send_request_body.started request=<Request [b'GET']> stream_id=7
+DEBUG 2025-03-02 08:04:01,507 _trace send_request_body.complete
+DEBUG 2025-03-02 08:04:01,507 _trace receive_response_headers.started request=<Request [b'GET']> stream_id=7
+DEBUG 2025-03-02 08:04:01,657 hpack Decoding b'\x88a\x96\xddm_J\x00Jh\x1d\x8a\x08\x02m@=p\r\\\x00T\xc5\xa3\x7f\xd0\x7f\x10\x8f|/\xca\xe0^q\xb8\xe5x.\x8c\x8bh\x86\x1f\xcf\xce\xcd\xcc\xcb\xca\xc9\xc8\xc7\xc6\xc5'
+DEBUG 2025-03-02 08:04:01,657 hpack Decoded 8, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,657 hpack Decoded (b':status', b'200'), consumed 1
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 33, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 22, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded (b'date', b'Sun, 02 Mar 2025 08:04:01 GMT'), total consumed 24 bytes, indexed True
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 80, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded (b'content-type', b'application/json'), consumed 1
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 79, consumed 2 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 15, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded (b'cf-ray', b'919f61865bf817ac-MAA'), total consumed 18 bytes, indexed True
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded 79, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,658 hpack Decoded (b'cf-cache-status', b'DYNAMIC'), consumed 1
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded 78, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded (b'content-encoding', b'gzip'), consumed 1
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded 77, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded (b'strict-transport-security', b'max-age=31536000'), consumed 1
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded 76, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded (b'vary', b'Origin, Accept-Encoding'), consumed 1
+DEBUG 2025-03-02 08:04:01,659 hpack Decoded 75, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded (b'sb-gateway-version', <memory at 0x1089a0400>), consumed 1
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded 74, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), consumed 1
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded 73, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded (b'x-content-type-options', b'nosniff'), consumed 1
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded 72, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,660 hpack Decoded (b'x-envoy-attempt-count', <memory at 0x1089a0dc0>), consumed 1
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded 71, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded (b'x-envoy-upstream-service-time', <memory at 0x1089a0280>), consumed 1
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded 70, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded (b'server', b'cloudflare'), consumed 1
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded 69, consumed 1 bytes
+DEBUG 2025-03-02 08:04:01,661 hpack Decoded (b'alt-svc', b'h3=":443"; ma=86400'), consumed 1
+DEBUG 2025-03-02 08:04:01,662 _trace receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 02 Mar 2025 08:04:01 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'919f61865bf817ac-MAA'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'dpnghrtnqvssbodyanzs'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'2'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO 2025-03-02 08:04:01,663 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+DEBUG 2025-03-02 08:04:01,663 _trace receive_response_body.started request=<Request [b'GET']> stream_id=7
+DEBUG 2025-03-02 08:04:01,664 _trace receive_response_body.complete
+DEBUG 2025-03-02 08:04:01,664 _trace response_closed.started stream_id=7
+DEBUG 2025-03-02 08:04:01,664 _trace response_closed.complete
+WARNING 2025-03-02 08:05:14,261 log Forbidden: /logs/
+INFO 2025-03-02 08:08:08,144 autoreload /Users/rsumit123/work/socialflow_django/socialflow_django/views.py changed, reloading.
+INFO 2025-03-02 08:08:08,508 autoreload Watching for file changes with StatReloader
+INFO 2025-03-02 08:08:16,024 autoreload /Users/rsumit123/work/socialflow_django/socialflow_django/views.py changed, reloading.
+INFO 2025-03-02 08:08:16,319 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-02 08:08:16,697 utils Using deepseek
+INFO 2025-03-02 08:08:16,699 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-02 08:09:46,944 autoreload /Users/rsumit123/work/socialflow_django/socialflow_django/settings.py changed, reloading.
+INFO 2025-03-02 08:09:47,294 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-02 08:09:47,697 utils Using deepseek
+INFO 2025-03-02 08:09:47,699 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-02 08:12:08,091 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-02 08:12:08,509 utils Using deepseek
+INFO 2025-03-02 08:12:08,510 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-02 08:39:27,402 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+INFO 2025-03-02 08:39:27,402 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:27,408 log Forbidden: /api/course_content/subcategories/
+WARNING 2025-03-02 08:39:27,410 log Forbidden: /api/course_content/training_plan_status/
+ERROR 2025-03-02 08:39:27,425 supabase_auth Supabase error: [Errno 35] Resource temporarily unavailable | retrying....
+ERROR 2025-03-02 08:39:27,425 supabase_auth Supabase error: [Errno 35] Resource temporarily unavailable | retrying....
+INFO 2025-03-02 08:39:27,943 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:27,946 log Forbidden: /api/course_content/subcategories/
+INFO 2025-03-02 08:39:28,111 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:28,112 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:28,293 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:28,295 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:28,471 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:28,475 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:28,646 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:28,649 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:28,827 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:28,830 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,004 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,007 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,181 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,183 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,366 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,369 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,540 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,542 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,717 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,720 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:29,898 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:29,902 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,085 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,087 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,182 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,184 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,285 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,286 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,388 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,389 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,489 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,490 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,597 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,598 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,693 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,694 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,790 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,792 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:30,935 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:30,937 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:39:31,037 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:39:31,038 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:27,271 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:27,273 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,013 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,015 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,103 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,105 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,198 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,207 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,311 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,312 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,428 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,430 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,528 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,530 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,625 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,628 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,727 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,729 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,827 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,829 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:28,928 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:28,929 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,019 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,020 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,117 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,118 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,212 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,213 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,304 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,306 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,395 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,396 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,491 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,493 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,579 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,581 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,669 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,670 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,767 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,769 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:29,918 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:29,920 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,021 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,022 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,109 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,110 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,214 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,216 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,351 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,352 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,455 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,457 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,569 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,570 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,666 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,667 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,763 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,764 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,860 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,861 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:30,949 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:30,950 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,052 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,053 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,157 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,158 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,314 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,316 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,408 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,409 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,516 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,525 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,614 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,615 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,713 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,715 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,817 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,819 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:31,918 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:31,919 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,013 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,015 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,152 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,154 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,279 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,281 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,380 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,382 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,489 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,490 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,589 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,591 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,692 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,693 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,787 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,789 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,885 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,887 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:32,987 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:32,989 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,085 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,088 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,185 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,187 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,275 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,277 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,367 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,369 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,462 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,465 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,568 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,569 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,663 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,665 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,755 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,758 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,853 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,855 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:33,944 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:33,945 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,044 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,047 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,144 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,145 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,239 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,242 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,332 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,333 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,430 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,432 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,524 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,526 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,627 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,629 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,722 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,724 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,831 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,832 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:34,925 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:34,927 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,021 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,024 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,149 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,152 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,251 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,253 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,349 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,351 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,450 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,453 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,552 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,554 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,672 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,674 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,777 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,783 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,889 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,891 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:35,993 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:35,995 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,094 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,097 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,188 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,190 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,293 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,295 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,392 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,395 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,494 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,495 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,589 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,592 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,686 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,688 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,774 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,776 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,877 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,879 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:36,974 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:36,975 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,082 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,085 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,182 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,184 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,286 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,288 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,398 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,400 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,494 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,495 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,596 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,598 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,689 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,691 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,783 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,785 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:37,906 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:37,924 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,038 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,041 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,153 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,156 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,258 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,260 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,373 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,375 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,472 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,475 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,570 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,572 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,663 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,666 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,766 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,767 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,860 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,862 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:38,961 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:38,963 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,056 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,059 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,173 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,177 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,284 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,287 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,392 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,396 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,493 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,497 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,604 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,607 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,701 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,704 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,818 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,820 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:39,954 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:39,956 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,093 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,096 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,192 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,196 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,296 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,300 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,399 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,402 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,501 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,504 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,600 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,604 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,701 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,703 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,802 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,804 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:40,908 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:40,911 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,015 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,019 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,119 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,122 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,225 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,228 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,324 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,328 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,429 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,433 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,538 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,541 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,640 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,643 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,757 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,760 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:41,890 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:41,891 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,003 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,006 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,107 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,111 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,218 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,220 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,336 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,340 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,436 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,440 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,545 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,548 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,644 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,647 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,752 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,756 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,854 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,857 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:42,959 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:42,961 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,058 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,061 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,161 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,165 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,264 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,267 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,376 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,380 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,490 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,494 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,604 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,608 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,712 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,715 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,829 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,832 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:43,929 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:43,931 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,056 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,059 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,154 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,158 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,293 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,294 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,390 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,392 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,491 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,493 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,597 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,599 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,703 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,705 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,811 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,813 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:44,924 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:44,926 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,024 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,025 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,120 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,122 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,226 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,228 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,328 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,330 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,431 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,434 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,527 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,529 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,630 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,632 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,729 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,732 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,855 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,858 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:45,951 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:45,954 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,054 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,056 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,173 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,177 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,280 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,289 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,444 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,448 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,548 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,550 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,655 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,658 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,761 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,765 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,872 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,875 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:46,973 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:46,977 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,078 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,081 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,182 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,184 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,275 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,278 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,385 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,388 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,488 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,490 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,588 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,597 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,693 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,696 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,801 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,805 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:47,935 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:47,939 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,047 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,050 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,185 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,186 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,291 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,296 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,392 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,394 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,511 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,514 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,614 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,618 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,721 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,724 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,818 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,824 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:48,927 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:48,928 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,027 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,029 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,144 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,147 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,248 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,249 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,340 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,344 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,451 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,455 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,557 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,560 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,659 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,663 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,762 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,765 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:49,898 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:49,901 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,000 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,004 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,149 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,152 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,259 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,260 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,355 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,357 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,458 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,462 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,569 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,572 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,675 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,679 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,790 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,794 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,889 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,893 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:50,995 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:50,998 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,100 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,103 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,201 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,204 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,308 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,310 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,405 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,408 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,501 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,504 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,606 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,609 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,713 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,732 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,838 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,841 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:51,975 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:51,978 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:52,107 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:52,109 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:52,234 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:52,238 log Forbidden: /api/course_content/training_plan_status/
+INFO 2025-03-02 08:41:52,358 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+WARNING 2025-03-02 08:41:52,361 log Forbidden: /api/course_content/training_plan_status/

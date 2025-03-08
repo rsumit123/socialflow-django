@@ -21,7 +21,7 @@ class SubCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SubCategory
-        fields = ['id', 'name', 'description', 'order', 'category', 'is_locked']
+        fields = ['id', 'name', 'description', 'objective', 'intro', 'order', 'category', 'is_locked']
 
     def get_is_locked(self, obj):
         request = self.context.get('request')

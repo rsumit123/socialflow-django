@@ -27,6 +27,8 @@ class SubCategory(models.Model):
     )
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
+    objective = models.TextField(blank=True, help_text="Learning objective for this subcategory")
+    intro = models.TextField(blank=True, help_text="Introduction content that will be displayed as a reading lesson")
     order = models.PositiveIntegerField(default=0)
 
     def __str__(self):

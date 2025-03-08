@@ -468,5 +468,69 @@ class EvaluateLessonView(APIView):
             )
 
 
+class SubCategoryIntroView(APIView):
+    """
+    API to return the subcategory intro content.
+    This will be displayed as a reading lesson for users in the UI.
+    """
+    permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        operation_summary="Get subcategory intro",
+        operation_description=(
+            "Returns the subcategory intro content including title, intro text, and objective. "
+            "This will be displayed as a reading lesson for users in the UI."
+        ),
+        manual_parameters=[
+            openapi.Parameter(
+                'subcategory_id',
+                openapi.IN_PATH,
+                description="ID of the subcategory",
+                type=openapi.TYPE_INTEGER,
+                required=True
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                description="Subcategory intro content",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        "id": openapi.Schema(type=openapi.TYPE_INTEGER, description="Subcategory ID"),
+                        "title": openapi.Schema(type=openapi.TYPE_STRING, description="Subcategory name"),
+                        "intro": openapi.Schema(type=openapi.TYPE_STRING, description="Subcategory introduction content"),
+                        "objective": openapi.Schema(type=openapi.TYPE_STRING, description="Learning objective for this subcategory"),
+                        "is_locked": openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Whether this subcategory is locked for the user")
+                    }
+                )
+            ),
+            404: "Subcategory not found"
+        }
+    )
+    def get(self, request, subcategory_id):
+        try:
+            subcategory = SubCategory.objects.get(id=subcategory_id)
+            
+            # Check if the subcategory is accessible to the user
+            is_locked = not is_content_accessible(request.user, subcategory)
+            
+            # Create a response with the subcategory intro content
+            response_data = {
+                "id": subcategory.id,
+                "title": subcategory.name,
+                "intro": subcategory.intro or f"Welcome to {subcategory.name}. This section will introduce you to the key concepts and ideas.",
+                "objective": subcategory.objective or f"Learn about {subcategory.name} and understand its key concepts.",
+                "is_locked": is_locked
+            }
+            
+            return Response(response_data, status=status.HTTP_200_OK)
+            
+        except SubCategory.DoesNotExist:
+            return Response(
+                {"error": "Subcategory not found"},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+
 
     
