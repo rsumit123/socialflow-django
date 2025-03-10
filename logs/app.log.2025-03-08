@@ -1,0 +1,515 @@
+INFO 2025-03-08 06:59:16,685 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+INFO 2025-03-08 06:59:16,932 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 06:59:17,806 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:02:33,290 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:02:34,143 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:00,649 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:03,854 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:04,391 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:16,646 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:16,721 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:17,196 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:17,624 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:19,908 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:03:20,437 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:34,015 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:38,012 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:38,935 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:41,609 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:42,741 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:49,695 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:49,724 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:50,112 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:04:50,306 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:06,962 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:07,588 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:09,808 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:10,576 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:14,551 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:15,567 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:20,216 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:21,657 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:25,029 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:25,037 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:25,632 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:29,683 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:49,215 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:05:49,839 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:07:02,562 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 07:07:02,776 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:07:03,774 views Category unlocked for the first time.
+INFO 2025-03-08 07:07:03,957 views Subcategory unlocked for the first time.
+INFO 2025-03-08 07:07:04,139 views Lesson unlocked for the first time.
+INFO 2025-03-08 07:07:04,332 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:08:04,805 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:26,441 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:27,340 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:27,998 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:28,682 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:39,706 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:39,888 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:40,593 views Category unlocked for the first time.
+INFO 2025-03-08 07:16:40,820 views Subcategory unlocked for the first time.
+INFO 2025-03-08 07:16:41,190 views Lesson unlocked for the first time.
+INFO 2025-03-08 07:16:41,395 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:53,067 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:54,064 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:16:59,884 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:17:00,992 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:17:06,814 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:17:09,683 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:31,722 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:32,562 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:33,792 views Category unlocked for the first time.
+INFO 2025-03-08 07:19:33,972 views Subcategory unlocked for the first time.
+INFO 2025-03-08 07:19:34,144 views Lesson unlocked for the first time.
+INFO 2025-03-08 07:19:34,582 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:38,763 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:40,373 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:53,855 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:54,839 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:56,002 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:19:56,885 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:23:29,144 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:24:11,652 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:24:25,815 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 07:24:25,996 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:24:26,554 views Category unlocked for the first time.
+INFO 2025-03-08 07:24:26,733 views Subcategory unlocked for the first time.
+INFO 2025-03-08 07:24:26,911 views Lesson unlocked for the first time.
+INFO 2025-03-08 07:24:27,101 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:25:51,411 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:25:52,572 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:25:56,219 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+ERROR 2025-03-08 07:25:56,488 report_views GOT USER AS => guest_42384c62-4c5b-4061-adc5-2e16d9e6b590@guestuser.com
+INFO 2025-03-08 07:25:56,607 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+ERROR 2025-03-08 07:25:56,865 report_views GOT USER AS => guest_42384c62-4c5b-4061-adc5-2e16d9e6b590@guestuser.com
+INFO 2025-03-08 07:25:59,371 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:26:00,031 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:26:14,480 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:26:15,178 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:26:49,714 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:26:53,572 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:27:13,322 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:27:13,981 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:27:16,767 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:27:17,777 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:36:45,714 autoreload /Users/rsumit123/work/socialflow_django/course_content/views.py changed, reloading.
+INFO 2025-03-08 07:36:46,166 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:36:46,562 utils Using deepseek
+INFO 2025-03-08 07:36:46,563 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:36:57,152 autoreload /Users/rsumit123/work/socialflow_django/course_content/urls.py changed, reloading.
+INFO 2025-03-08 07:36:57,486 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:36:57,864 utils Using deepseek
+INFO 2025-03-08 07:36:57,865 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:37:07,384 autoreload /Users/rsumit123/work/socialflow_django/course_content/models.py changed, reloading.
+INFO 2025-03-08 07:37:07,708 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:37:08,088 utils Using deepseek
+INFO 2025-03-08 07:37:08,090 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:37:16,609 autoreload /Users/rsumit123/work/socialflow_django/course_content/serializers.py changed, reloading.
+INFO 2025-03-08 07:37:16,917 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:37:17,302 utils Using deepseek
+INFO 2025-03-08 07:37:17,303 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:37:32,088 autoreload /Users/rsumit123/work/socialflow_django/course_content/views.py changed, reloading.
+INFO 2025-03-08 07:37:32,458 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:37:32,871 utils Using deepseek
+INFO 2025-03-08 07:37:32,872 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:38:52,664 autoreload /Users/rsumit123/work/socialflow_django/course_content/models.py changed, reloading.
+INFO 2025-03-08 07:38:53,087 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:38:53,547 utils Using deepseek
+INFO 2025-03-08 07:38:53,549 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:39:05,184 autoreload /Users/rsumit123/work/socialflow_django/course_content/serializers.py changed, reloading.
+INFO 2025-03-08 07:39:05,497 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:39:05,868 utils Using deepseek
+INFO 2025-03-08 07:39:05,869 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:39:21,700 autoreload /Users/rsumit123/work/socialflow_django/course_content/views.py changed, reloading.
+INFO 2025-03-08 07:39:22,046 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:39:22,417 utils Using deepseek
+INFO 2025-03-08 07:39:22,419 chat_views Loaded 10 scenarios from scenarios.json.
+ERROR 2025-03-08 07:39:33,188 utils Using deepseek
+INFO 2025-03-08 07:39:33,190 chat_views Loaded 10 scenarios from scenarios.json.
+ERROR 2025-03-08 07:39:41,262 utils Using deepseek
+INFO 2025-03-08 07:39:41,264 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 07:40:03,397 autoreload /Users/rsumit123/work/socialflow_django/course_content/models.py changed, reloading.
+INFO 2025-03-08 07:40:03,717 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 07:40:04,109 utils Using deepseek
+INFO 2025-03-08 07:40:04,111 chat_views Loaded 10 scenarios from scenarios.json.
+WARNING 2025-03-08 07:46:20,159 base view's LessonProgressViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2688, in to_python
+    return uuid.UUID(**{input_form: value})
+  File "/Users/rsumit123/.pyenv/versions/3.9.16/lib/python3.9/uuid.py", line 174, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/Users/rsumit123/work/socialflow_django/course_content/views.py", line 154, in get_queryset
+    qs = LessonProgress.objects.filter(user=self.request.user)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2672, in get_prep_value
+    return self.to_python(value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2690, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-03-08 07:46:20,176 base view's LessonProgressViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2688, in to_python
+    return uuid.UUID(**{input_form: value})
+  File "/Users/rsumit123/.pyenv/versions/3.9.16/lib/python3.9/uuid.py", line 174, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/Users/rsumit123/work/socialflow_django/course_content/views.py", line 154, in get_queryset
+    qs = LessonProgress.objects.filter(user=self.request.user)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2672, in get_prep_value
+    return self.to_python(value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2690, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-03-08 07:46:20,176 base view's LessonProgressViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2688, in to_python
+    return uuid.UUID(**{input_form: value})
+  File "/Users/rsumit123/.pyenv/versions/3.9.16/lib/python3.9/uuid.py", line 174, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/Users/rsumit123/work/socialflow_django/course_content/views.py", line 154, in get_queryset
+    qs = LessonProgress.objects.filter(user=self.request.user)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2672, in get_prep_value
+    return self.to_python(value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2690, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+WARNING 2025-03-08 07:46:20,176 base view's LessonProgressViewSet raised exception during schema generation; use `getattr(self, 'swagger_fake_view', False)` to detect and short-circuit this
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2688, in to_python
+    return uuid.UUID(**{input_form: value})
+  File "/Users/rsumit123/.pyenv/versions/3.9.16/lib/python3.9/uuid.py", line 174, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+AttributeError: 'AnonymousUser' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/drf_yasg/inspectors/base.py", line 42, in call_view_method
+    return view_method()
+  File "/Users/rsumit123/work/socialflow_django/course_content/views.py", line 154, in get_queryset
+    qs = LessonProgress.objects.filter(user=self.request.user)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2672, in get_prep_value
+    return self.to_python(value)
+  File "/Users/rsumit123/work/socialflow_django/venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 2690, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“AnonymousUser” is not a valid UUID.']
+INFO 2025-03-08 07:47:00,456 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+INFO 2025-03-08 07:47:37,742 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:47:49,110 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:47:55,683 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+WARNING 2025-03-08 07:47:55,985 log Not Found: /api/course_content/subcategories/21/
+INFO 2025-03-08 07:48:00,282 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:48:05,152 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:35,950 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:36,853 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:39,231 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:39,902 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:42,864 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:43,897 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:46,016 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+ERROR 2025-03-08 07:56:46,445 supabase_auth Supabase error: [Errno 35] Resource temporarily unavailable | retrying....
+ERROR 2025-03-08 07:56:46,446 supabase_auth Supabase error: [Errno 35] Resource temporarily unavailable | retrying....
+INFO 2025-03-08 07:56:46,605 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:46,620 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:48,062 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:56:59,568 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:00,067 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:20,146 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:20,660 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:20,666 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:21,784 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:25,495 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:25,980 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:35,068 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:35,564 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:35,567 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:36,751 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:41,550 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 07:57:42,084 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:13,070 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:13,266 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:14,191 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:16,275 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:16,813 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:17,909 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:18,798 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:21,257 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:21,843 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:21,856 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:23,223 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:26,083 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:26,599 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:31,224 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:31,860 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:33,216 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:34,367 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:36,641 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:37,229 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:37,237 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:38,395 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:40,904 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:02:41,512 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:42,926 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:43,000 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:43,579 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:43,582 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:45,536 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:46,088 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:47,207 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:48,162 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:49,330 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:49,881 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:52,980 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:54,061 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:55,905 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:56,430 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:56,444 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:07:57,736 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:08:00,720 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:08:01,553 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:13,973 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:13,976 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:14,493 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:14,664 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:16,596 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:17,233 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:20,517 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:21,618 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:23,390 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:23,928 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:23,931 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:25,130 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:26,146 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:26,797 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:50,659 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:51,146 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:51,148 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:14:52,396 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:16:42,608 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:16:43,178 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:16:50,824 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:16:51,830 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 08:20:18,672 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 08:20:19,134 utils Using deepseek
+INFO 2025-03-08 08:20:19,135 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 09:06:30,168 autoreload /Users/rsumit123/work/socialflow_django/course_content/views.py changed, reloading.
+INFO 2025-03-08 09:06:30,600 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 09:06:31,011 utils Using deepseek
+INFO 2025-03-08 09:06:31,013 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 09:08:43,244 autoreload /Users/rsumit123/work/socialflow_django/course_content/views.py changed, reloading.
+INFO 2025-03-08 09:08:43,630 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 09:08:44,023 utils Using deepseek
+INFO 2025-03-08 09:08:44,024 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 09:09:05,395 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:05,403 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:06,146 views Category Engagement (ID: 3) unlocked for the first time.
+INFO 2025-03-08 09:09:06,816 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:06,926 views Subcategory Icebreakers (ID: 7) unlocked for the first time.
+INFO 2025-03-08 09:09:07,344 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:09,436 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:11,548 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:26,638 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:26,875 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:27,767 views Category IceBreakers (ID: 4) unlocked for the first time.
+INFO 2025-03-08 09:09:27,940 views Category Humor (ID: 1) unlocked for the first time.
+INFO 2025-03-08 09:09:28,118 views Category Empathy (ID: 2) unlocked for the first time.
+INFO 2025-03-08 09:09:28,293 views Category Engagement (ID: 3) unlocked for the first time.
+INFO 2025-03-08 09:09:28,512 views Subcategory Small Groups (ID: 12) unlocked for the first time.
+INFO 2025-03-08 09:09:28,732 views Lesson IIT Study Group (ID: 19) unlocked for the first time.
+INFO 2025-03-08 09:09:28,955 views Subcategory Affiliative Humor (ID: 1) unlocked for the first time.
+INFO 2025-03-08 09:09:29,174 views Lesson The Connaught Place Quip (ID: 1) unlocked for the first time.
+INFO 2025-03-08 09:09:29,395 views Subcategory Active Listening (ID: 17) unlocked for the first time.
+INFO 2025-03-08 09:09:29,614 views Lesson Vikram's Dilemma (ID: 27) unlocked for the first time.
+INFO 2025-03-08 09:09:29,835 views Subcategory Icebreakers (ID: 7) unlocked for the first time.
+INFO 2025-03-08 09:09:30,283 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:32,735 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:34,041 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:35,610 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:36,333 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:41,345 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:42,572 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:44,983 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:45,647 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:45,650 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:47,577 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:50,614 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:51,269 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:54,069 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:54,608 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:54,611 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:56,528 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:58,244 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:09:59,282 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:02,369 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:03,029 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:05,004 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:05,998 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:08,360 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:08,870 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:08,879 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:10,409 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:16,181 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:17,196 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:22,484 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:23,053 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:26,279 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:27,350 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:31,750 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:32,359 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:32,361 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:32,919 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:36,349 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:37,400 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:39,317 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:10:39,871 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:21,075 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:22,373 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:27,132 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:27,680 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:27,690 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:29,052 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:33,633 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:34,214 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:36,508 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:37,882 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:40,850 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:41,336 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:41,339 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:43,384 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:44,745 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:44,753 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:45,216 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:45,538 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:50,305 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:51,016 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:51,018 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:53,469 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:57,118 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:15:57,750 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:16:29,865 autoreload Watching for file changes with StatReloader
+ERROR 2025-03-08 09:16:30,263 utils Using deepseek
+INFO 2025-03-08 09:16:30,265 chat_views Loaded 10 scenarios from scenarios.json.
+INFO 2025-03-08 09:17:16,103 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:17:16,153 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:17:16,769 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 09:17:17,784 views Subcategory Sustaining Conversation (ID: 8) unlocked for the first time.
+INFO 2025-03-08 09:17:18,263 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:09,802 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:14,318 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:30,575 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:32,354 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:44,441 _client HTTP Request: POST https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:44,633 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"
+INFO 2025-03-08 17:58:45,286 views Category IceBreakers (ID: 4) unlocked for the first time.
+INFO 2025-03-08 17:58:45,456 views Category Humor (ID: 1) unlocked for the first time.
+INFO 2025-03-08 17:58:45,627 views Category Empathy (ID: 2) unlocked for the first time.
+INFO 2025-03-08 17:58:45,795 views Category Engagement (ID: 3) unlocked for the first time.
+INFO 2025-03-08 17:58:46,006 views Subcategory Small Groups (ID: 12) unlocked for the first time.
+INFO 2025-03-08 17:58:46,216 views Lesson IIT Study Group (ID: 19) unlocked for the first time.
+INFO 2025-03-08 17:58:46,425 views Subcategory Affiliative Humor (ID: 1) unlocked for the first time.
+INFO 2025-03-08 17:58:46,635 views Lesson The Connaught Place Quip (ID: 1) unlocked for the first time.
+INFO 2025-03-08 17:58:46,848 views Subcategory Active Listening (ID: 17) unlocked for the first time.
+INFO 2025-03-08 17:58:47,059 views Lesson Vikram's Dilemma (ID: 27) unlocked for the first time.
+INFO 2025-03-08 17:58:47,270 views Subcategory Sustaining Conversation (ID: 8) unlocked for the first time.
+INFO 2025-03-08 17:58:47,691 _client HTTP Request: GET https://dpnghrtnqvssbodyanzs.supabase.co/auth/v1/user "HTTP/2 200 OK"

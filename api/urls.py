@@ -3,7 +3,7 @@ from .auth_views import (
     SupabaseLoginView, SupabaseRegisterView, SupabaseGuestLoginView
 )
 from .test_views import ProtectedView, HealthCheck
-from .chat_views import ChatSessionView, ChatMessageView, ChatBotListView
+from .chat_views import ChatSessionView, ChatMessageView, ChatBotListView, ReportGenerationView
 from .report_views import ReportCardDetailView, ReportCardListView
 from .swagger import schema_view
 
@@ -18,6 +18,7 @@ urlpatterns = [
     # Chat Endpoints
     path('chat/sessions/', ChatSessionView.as_view(), name="chat_sessions"),
     path('chat/sessions/<uuid:session_id>/messages/', ChatMessageView.as_view(), name="chat_messages"),
+    path('chat/sessions/<uuid:session_id>/generate-report/', ReportGenerationView.as_view(), name="generate_report"),
     path('chat/bots/', ChatBotListView.as_view(), name="chat_bots"),
     # Report Endpoints
     path('report/chat/sessions/<uuid:session_id>/report-card/', ReportCardDetailView.as_view(), name='reportcard-detail'),

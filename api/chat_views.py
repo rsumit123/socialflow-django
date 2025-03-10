@@ -218,6 +218,14 @@ class ChatMessageView(APIView):
                             type=openapi.TYPE_STRING, 
                             description="Response from the AI"
                         ),
+                        "chat_ended": openapi.Schema(
+                            type=openapi.TYPE_BOOLEAN,
+                            description="Flag indicating if the chat has ended"
+                        ),
+                        "message_count": openapi.Schema(
+                            type=openapi.TYPE_INTEGER,
+                            description="Number of user messages in the chat"
+                        )
                     }
                 )
             ),
@@ -240,9 +248,6 @@ class ChatMessageView(APIView):
             # Sanitize the user message
             user_message = escape(user_message)
 
-            # logger.error(f"Found user => {request.user}")
-
-
             # Retrieve the chat session for the current user
             session = ChatSession.objects.filter(id=session_id).first()
             if not session:
@@ -256,106 +261,153 @@ class ChatMessageView(APIView):
                 session=session, sender="user", content=user_message
             )
 
-            # Gather all user messages (as strings)
-            user_messages = list(
-                session.messages.filter(sender="user").values_list("content", flat=True)
-            )
-            # Retrieve and join any system messages for context
-            system_qs = session.messages.filter(sender="system")
-            system_msg = (
-                " ".join(system_qs.values_list("content", flat=True))
-                if system_qs.exists() else ""
-            )
-
-            # Retrieve messages (user and assistant) ordered by creation time
-            ai_msgs_qs = session.messages.filter(sender__in=["user", "assistant"]).order_by("timestamp")
-            messages = [
-                {"role": msg.sender, "content": msg.content}
-                for msg in ai_msgs_qs
-            ]
-            # Prepend system message if it exists
-            if system_msg:
-                messages.insert(0, {"role": "system", "content": system_msg})
-            # Limit context to the last MAX_MESSAGES if needed
-            if len(messages) > MAX_MESSAGES:
-                messages = messages[-MAX_MESSAGES:]
-
-            # Get AI response based on the conversation context
-            ai_response = get_ai_response(messages)
-            ai_msg = ChatMessage.objects.create(
-                session=session, sender="assistant", content=ai_response
-            )
-
+            # Check if the chat should end
             lower_message = user_message.lower()
-            # Include the current message in the count
-            user_message_count = len(user_messages) + 1
+            chat_ended = "end chat" in lower_message or "end this chat" in lower_message
 
-            # If fewer than 10 messages and the user hasn't signaled an end...
-            if user_message_count < 10 and not (
-                "end chat" in lower_message or "end this chat" in lower_message
-            ):
-                return Response({
-                    "user_message": user_msg.content,
-                    "ai_response": ai_msg.content
-                }, status=status.HTTP_200_OK)
+            # Get the current message count
+            user_message_count = session.messages.filter(sender="user").count()
+            
+            # Check if we've reached the maximum number of messages
+            if user_message_count >= 10:
+                chat_ended = True
 
-            # If exactly 10 messages or the user signals end-of-chat, trigger evaluation
-            elif user_message_count == 10 or (
-                "end chat" in lower_message or "end this chat" in lower_message
-            ):
-                # Refresh messages for evaluation
-                updated_user_messages = list(
-                    session.messages.filter(sender="user").values_list("content", flat=True)
+            # Only generate AI response if the chat hasn't ended
+            ai_response = ""
+            if not chat_ended:
+                # Gather context for AI response
+                system_qs = session.messages.filter(sender="system")
+                system_msg = (
+                    " ".join(system_qs.values_list("content", flat=True))
+                    if system_qs.exists() else ""
                 )
-                ai_messages = list(
-                    session.messages.filter(sender="assistant").values_list("content", flat=True)
+
+                # Retrieve messages (user and assistant) ordered by creation time
+                ai_msgs_qs = session.messages.filter(sender__in=["user", "assistant"]).order_by("timestamp")
+                messages = [
+                    {"role": msg.sender, "content": msg.content}
+                    for msg in ai_msgs_qs
+                ]
+                # Prepend system message if it exists
+                if system_msg:
+                    messages.insert(0, {"role": "system", "content": system_msg})
+                # Limit context to the last MAX_MESSAGES if needed
+                if len(messages) > MAX_MESSAGES:
+                    messages = messages[-MAX_MESSAGES:]
+
+                # Get AI response based on the conversation context
+                ai_response = get_ai_response(messages)
+                ai_msg = ChatMessage.objects.create(
+                    session=session, sender="assistant", content=ai_response
                 )
-                report_card, feedback, unlocked_cat, unlocked_sub, unlocked_lesson = process_evaluation(
-                    session, updated_user_messages, ai_messages, session_id, request.user
-                )
-                if user_message_count == 10:
-                    response_data = {
-                        "user_message": user_msg.content,
-                        "ai_response": ai_msg.content,
-                        "evaluation": {
-                            "engagement_score": report_card.engagement_score,
-                            # "engagement_feedback": report_card.engagement_feedback,
-                            "humor_score": report_card.humor_score,
-                            # "humor_feedback": report_card.humor_feedback,
-                            "empathy_score": report_card.empathy_score,
-                            # "empathy_feedback": report_card.empathy_feedback,
-                            "total_score": report_card.total_score,
-                            "feedback_summary": feedback,
-                            "feedback": feedback,
-                            "unlocked_content": True if unlocked_cat or unlocked_sub or unlocked_lesson else False,
-                            "report_link": f"{CLIENT_URL}/report-cards/{session_id}"
-                        }
-                    }
-                else:
-                    response_data = {
-                        "user_message": user_msg.content,
-                        "ai_response": "You have completed the game! Your performance has been evaluated. Go to Report Cards to view your Score.",
-                        "evaluation": {
-                            "engagement_score": report_card.engagement_score,
-                            "humor_score": report_card.humor_score,
-                            "empathy_score": report_card.empathy_score,
-                            "total_score": report_card.total_score,
-                            "feedback_summary": feedback,
-                            "unlocked_content": True if unlocked_cat or unlocked_sub or unlocked_lesson else False,
-                            "feedback": feedback,
-                            "report_link": f"{CLIENT_URL}/report-cards/{session_id}"
-                        }
-                    }
-                return Response(response_data, status=status.HTTP_200_OK)
-    
             else:
-                return Response({
-                    "user_message": user_msg.content,
-                    "ai_response": ai_msg.content
-                }, status=status.HTTP_200_OK)
+                # If chat has ended, create a simple closing message
+                ai_response = "Chat has ended. You can now view your report."
+                ai_msg = ChatMessage.objects.create(
+                    session=session, sender="assistant", content=ai_response
+                )
+
+            # Return the response with chat_ended flag
+            return Response({
+                "user_message": user_msg.content,
+                "ai_response": ai_msg.content,
+                "chat_ended": chat_ended,
+                "message_count": user_message_count
+            }, status=status.HTTP_200_OK)
 
         except Exception as e:
             logger.exception(f"Error handling chat message: {e}")
+            transaction.set_rollback(True)
+            return Response(
+                {"error": "Internal server error"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+class ReportGenerationView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        operation_summary="Generate a report for a chat session",
+        operation_description="Generates a report based on the messages in a chat session.",
+        manual_parameters=[
+            openapi.Parameter(
+                name="session_id",
+                in_=openapi.IN_PATH,
+                description="Chat session ID",
+                type=openapi.TYPE_STRING,
+                format="uuid",
+                required=True,
+            ),
+            openapi.Parameter(
+                name="Authorization",
+                in_=openapi.IN_HEADER,
+                description="Bearer JWT token",
+                type=openapi.TYPE_STRING,
+                required=True,
+            )
+        ],
+        responses={
+            200: openapi.Response(
+                "Report generated successfully",
+                openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        "engagement_score": openapi.Schema(type=openapi.TYPE_NUMBER, description="Engagement score"),
+                        "humor_score": openapi.Schema(type=openapi.TYPE_NUMBER, description="Humor score"),
+                        "empathy_score": openapi.Schema(type=openapi.TYPE_NUMBER, description="Empathy score"),
+                        "total_score": openapi.Schema(type=openapi.TYPE_NUMBER, description="Total score"),
+                        "feedback_summary": openapi.Schema(type=openapi.TYPE_STRING, description="Feedback summary"),
+                        "feedback": openapi.Schema(type=openapi.TYPE_STRING, description="Detailed feedback"),
+                        "unlocked_content": openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Whether new content was unlocked"),
+                        "report_link": openapi.Schema(type=openapi.TYPE_STRING, description="Link to the report")
+                    }
+                )
+            ),
+            404: "Chat session not found",
+            401: "Unauthorized - Bearer token required",
+        },
+        security=[{"Bearer": []}]
+    )
+    @transaction.atomic
+    def get(self, request, session_id):
+        try:
+            # Retrieve the chat session for the current user
+            session = ChatSession.objects.filter(id=session_id).first()
+            if not session:
+                return Response(
+                    {"error": "Chat session not found"},
+                    status=status.HTTP_404_NOT_FOUND
+                )
+
+            # Extract user and AI messages from the session
+            user_messages = list(
+                session.messages.filter(sender="user").values_list("content", flat=True)
+            )
+            ai_messages = list(
+                session.messages.filter(sender="assistant").values_list("content", flat=True)
+            )
+
+            # Generate the report
+            report_card, feedback, unlocked_cat, unlocked_sub, unlocked_lesson = process_evaluation(
+                session, user_messages, ai_messages, session_id, request.user
+            )
+
+            # Prepare the response
+            response_data = {
+                "engagement_score": report_card.engagement_score,
+                "humor_score": report_card.humor_score,
+                "empathy_score": report_card.empathy_score,
+                "total_score": report_card.total_score,
+                "feedback_summary": feedback,
+                "feedback": feedback,
+                "unlocked_content": True if unlocked_cat or unlocked_sub or unlocked_lesson else False,
+                "report_link": f"{CLIENT_URL}/report-cards/{session_id}"
+            }
+
+            return Response(response_data, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            logger.exception(f"Error generating report: {e}")
             transaction.set_rollback(True)
             return Response(
                 {"error": "Internal server error"},
